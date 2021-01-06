@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>白鹭富文本编辑器</title>
+</head>
+
+<body>
+    <div id="editor">
+        <p>欢迎使用白鹭富文本编辑器</p>
+    </div>
+
+    <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
+    <!-- <script type="text/javascript" src="http://unpkg.com/wangeditor/release/wangEditor.min.js"></script>-->
+    <script type="text/javascript" src="./wangEditor.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#editor')
+        var storage=window.localStorage;
+        var colors = storage.getItem("colors");
+        var fontNames = storage.getItem("fontNames");
+        // 或者 var editor = new E( document.getElementById('editor') )
+        // 自定义菜单配置
+        editor.customConfig.menus = [
+            'bold',  // 粗体
+            'fontName',  // 字体
+            'italic',  // 斜体
+            'underline',  // 下划线
+            'foreColor',  // 文字颜色
+            'code',  // 插入代码
+            'undo',  // 撤销
+            'redo',  // 重复
+            'backColor'
+        ]
+
+        if (colors) {
+            editor.customConfig.colors = colors.split("\n");
+        } else {
+             // 自定义配置颜色（字体颜色、背景色）
+            editor.customConfig.colors = [
+                '#ff9d24',
+                /**蓝色 */
+                '#1b79ed',
+                /**金色(黄色) */
+                '#ffde00',
+                /**粉色 */
+                '#ff86e0',
+                /**红色 */
+                '#ff0000',
+                /**绿色 */
+                '#23e423',
+                /** 绿黄色 */
+                '#adff2f',
+                /**灰色 */
+                '#767676',
+            ]
+        }
+       
+        if (fontNames) {
+            editor.customConfig.fontNames = fontNames.split("\n");
+        } else {
+            editor.customConfig.fontNames = [
+                'SimHei',
+                'Microsoft YaHei',
+                'Arial',
+                'SimSun',
+                'Tahoma',
+                'Verdana'
+            ]
+        }
+
+        editor.create()
+        window.editor = editor;
+
+    </script>
+</body>
+
+</html>
