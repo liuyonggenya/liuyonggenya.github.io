@@ -798,7 +798,7 @@
     // 构造函数
     function Bold(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-bold"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-bold" title="加粗"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1103,7 +1103,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-font"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-font" title="字体"></i></div>');
         this.type = 'droplist';
 
         // 当前是否 active 状态
@@ -1493,7 +1493,7 @@
     // 构造函数
     function Italic(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-italic"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-italic" title="斜体"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1546,7 +1546,7 @@
     // 构造函数
     function Redo(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-redo"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-redo" title="重做"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1627,7 +1627,7 @@
     // 构造函数
     function Underline(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-underline"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-underline" title="下划线"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1680,7 +1680,7 @@
     // 构造函数
     function Undo(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-undo"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-undo" title="撤销"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1825,7 +1825,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-pencil2"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-pencil2" title="颜色"></i></div>');
         this.type = 'droplist';
 
         // 获取配置的颜色
@@ -1894,7 +1894,7 @@
         // });
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-paint-brush"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-paint-brush" title="设置"></i></div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
@@ -2048,7 +2048,7 @@
     // 构造函数
     function Code(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-terminal"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-terminal" title="输出"></i>\n        </div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
