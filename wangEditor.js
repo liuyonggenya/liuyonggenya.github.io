@@ -1938,7 +1938,7 @@
                     // 标题
                     title: '设置',
                     // 模板
-                    tpl: '<div>设置颜色显示列表，一个颜色一行\n                        <textarea id="' + colorsTextId + '" style="height:145px;;">' + colorsValue + '</textarea>\n  设置字体显示列表   <textarea id="' + fontTextId + '" style="height:145px;;">' + fontsValue + '</textarea>\n                  <div class="w-e-button-container">\n                            <button id="' + btnId + '" class="right">\u786e\u5b9a</button>\n                        </div>\n                    <div>',
+                    tpl: '<div>设置颜色显示列表，一个颜色一行\n                        <textarea id="' + colorsTextId + '" style="height:145px;;">' + colorsValue + '</textarea>\n  设置字体显示列表   <textarea id="' + fontTextId + '" style="height:145px;;">' + fontsValue + '</textarea>\n                  <div class="w-e-button-container">\n 设置完需刷新浏览器才会生效       <button id="' + btnId + '" class="right">\u786e\u5b9a</button>\n                        </div>\n                    <div>',
                     // 事件绑定
                     events: [
                         // 插入代码
